@@ -20,7 +20,21 @@ def solve(a,b):
     return array
 
 a = ['fn', 'vsiquhmjl', 'ppipxcjmq', 'vsiquhmjl', 'ogty', 'fo', 'taxynpezrx', 'ppipxcjmq', 'taxynpezrx', 'vsiquhmjl', 'ugjpb', 'ugjpb', 'taxynpezrx', 'ppipxcjmq', 'taxynpezrx', 'ppipxcjmq', 'fn', 'vsiquhmjl', 'fn', 'taxynpezrx', 'fn']
-b = ['fo', 'ugjpb']
+b = ['fo', 'ugjpb', 'ogty']
+
+# Using loops instead of count
+def solve(a,b):
+    resultList = []
+    # Look at everything in b 
+    for bElem in b:
+        numSame = 0
+        for aElem in a:
+            if bElem == aElem:
+                numSame += 1
+        resultList.append(numSame)
+
+        
+    return resultList
 
 result = solve(a, b)
 print("Result:", result)
