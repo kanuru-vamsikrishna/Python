@@ -10,3 +10,5 @@ def make_negative( number ):
     
 result = make_negative(-9)
 print("Result:", result)
+
+# -abs(number) is an inbuilt method
