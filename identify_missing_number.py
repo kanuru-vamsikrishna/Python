@@ -12,7 +12,12 @@ Note: N may be 1 or less (in the latter case, the first array will be []).
 """
 
 def find_deleted_number(arr, mixed_arr):
+    print(arr, "arr")
+    print(mixed_arr, "mixed_arr")
+    print(set(arr), "set1")
+    print(set(mixed_arr), "set2")
     result = list(set(arr) - set(mixed_arr))
+    print(result, "result")
     return 0 if len(result) == 0 else result[0]
 
 result = find_deleted_number([1,2,3,4,5,6,7,8,9], [1,9,7,4,6,2,3,8])
