@@ -14,6 +14,7 @@ cakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flo
 def cakes(recipe, available):
     cake_list = []
     for key in recipe:
+        print(available[key], recipe[key])
         if key not in available or available[key] < recipe[key]:
             return 0
         cake_list.append(available[key] // recipe[key])
